@@ -1,0 +1,17 @@
+.active {
+    background-color: var(--color-brands);
+    transition: all 0.3s;
+
+    span {
+        color: white;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+
+    .child-menu {
+        color: white
+    }
+
+}
