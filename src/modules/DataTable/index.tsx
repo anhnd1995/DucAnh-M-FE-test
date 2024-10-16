@@ -320,14 +320,22 @@ const DataTable = () => {
               </thead>
               <tbody>
                 {isFetching && (
-                  <div className="text-center min-h-[600px] grid place-items-center w-[90%] absolute">
-                    <span className="loading loading-infinity loading-lg"></span>
-                  </div>
+                  <tr>
+                    <td>
+                      <div className="text-center min-h-[600px] grid place-items-center w-[90%] absolute">
+                        <span className="loading loading-infinity loading-lg"></span>
+                      </div>
+                    </td>
+                  </tr>
                 )}
                 {!isFetching && rows.length === 0 && (
-                  <div className="text-center min-h-[600px] grid place-items-center w-[90%] absolute">
-                    <span>No data found</span>
-                  </div>
+                  <tr>
+                    <td>
+                      <div className="text-center min-h-[600px] grid place-items-center w-[90%] absolute">
+                        <span>No data found</span>
+                      </div>
+                    </td>
+                  </tr>
                 )}
                 {virtualizer.getVirtualItems().map((virtualRow, index) => {
                   const row = rows[virtualRow.index];

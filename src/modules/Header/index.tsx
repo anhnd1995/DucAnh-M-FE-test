@@ -8,6 +8,9 @@ const Header = () => {
     queryKey: ["getData"],
     queryFn: getData,
   });
+
+  console.log("🚀 ~ Header ~ data:", data);
+
   const { handleExportCSV, handleExportPDF } = useExportFile({
     data: data ?? [],
   });

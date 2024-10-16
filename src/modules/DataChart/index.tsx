@@ -76,6 +76,7 @@ const DataChart = () => {
       <div
         className="flex items-start gap-[36px] flex-1 w-full flex-wrap"
         data-testid="data-chart"
+        id="chart-container"
       >
         <CardWrapper className="p-[25px] rounded-2xl relative flex-1">
           <div className="flex items-center justify-between flex-wrap gap-8">
